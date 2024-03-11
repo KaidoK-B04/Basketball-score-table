@@ -1,0 +1,98 @@
+@import url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: blanchedalmond;
+    color: white;
+    background-image: url('basketball.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: fantasy;
+}
+header {
+    text-align: center;
+    color: black;
+    margin: 40px 0px 40px 0px;
+    font-size: 1.8rem;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(27, 36, 74, 0.8);
+    width: 600px;
+    height: 383px;
+    align-items: center;
+}
+#home, #guest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    min-width: 155px; 
+    height: 120px;
+    padding: 10px;
+}
+
+#home_score, #guest_score {
+    transition: color 0.5s;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+p {
+    font-size: 90px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+}
+span {
+    font-size: 40px;
+}
+h1 {
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#add_points_btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+button {
+    padding: 5px;
+    margin: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+    margin: 50px;
+    color: rgb(255, 255, 255);
+}
+
+

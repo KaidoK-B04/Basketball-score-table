@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    <title>Basketball score table</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>BASKETBALL GAME</h1>
+    </header>
+    <main>
+        <div id="parent">
+            <div id="home">
+                <h1>HOME</h1>
+                <div class="score">
+                    <p id="home_score">0</p>
+                </div>
+                <div id="add_points_btns">
+                    <button onclick="increment_home_one()">+1</button>
+                    <button onclick="increment_home_two()">+2</button>
+                    <button onclick="increment_home_three()">+3</button>
+                </div>
+            </div>
+            <span>VS</span>
+            <div id="guest">
+                <h1>GUEST</h1>
+                <div class="score">
+                    <p id="guest_score">0</p>
+                </div>
+                <div id="add_points_btns">
+                    <button onclick="increment_guest_one()">+1</button>
+                    <button onclick="increment_guest_two()">+2</button>
+                    <button onclick="increment_guest_three()">+3</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h5>Vanilla JavaScript made by KaidoK-B04</h5>
+    </footer>
+</body>
+
+</html>
