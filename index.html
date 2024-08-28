@@ -22,9 +22,9 @@
                     <p id="home_score">0</p>
                 </div>
                 <div id="add_points_btns">
-                    <button onclick="increment_home_one()">+1</button>
-                    <button onclick="increment_home_two()">+2</button>
-                    <button onclick="increment_home_three()">+3</button>
+                    <button onclick="updateScore('home', 1)">+1</button>
+                    <button onclick="updateScore('home', 2)">+2</button>
+                    <button onclick="updateScore('home', 3)">+3</button>
                 </div>
             </div>
             <span>VS</span>
@@ -34,12 +34,13 @@
                     <p id="guest_score">0</p>
                 </div>
                 <div id="add_points_btns">
-                    <button onclick="increment_guest_one()">+1</button>
-                    <button onclick="increment_guest_two()">+2</button>
-                    <button onclick="increment_guest_three()">+3</button>
+                    <button onclick="updateScore('guest', 1)">+1</button>
+                    <button onclick="updateScore('guest', 2)">+2</button>
+                    <button onclick="updateScore('guest', 3)">+3</button>
                 </div>
             </div>
         </div>
+        <button onclick="resetScores()">NEW GAME</button>
     </main>
     <footer>
         <h5>Vanilla JavaScript made by KaidoK-B04</h5>
