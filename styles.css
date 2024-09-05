@@ -13,6 +13,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     font-family: fantasy;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 header {
     text-align: center;
@@ -23,8 +26,9 @@ header {
 
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 #parent {
     display: flex;
@@ -35,6 +39,7 @@ main {
     height: 383px;
     align-items: center;
 }
+
 #home, #guest {
     display: flex;
     flex-direction: column;
@@ -81,18 +86,36 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
 }
+
 button {
-    padding: 5px;
+    transition: all .5s ease;
+    color: #fff;
+    border: 1px solid white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    background-color : transparent;
+    padding: 10px;
     margin: 10px;
-    background-color: transparent;
-    color: white;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+button:hover {
+    color: #001F3F;
+    background-color: #fff;
+}
+#resetbtn:hover {
+    color: #ffffff;
+    background-color: #9a0101;
 }
 
 footer {
     display: flex;
-    justify-content: end;
-    margin: 50px;
+    align-items: center;
+    justify-content: space-around;
     color: rgb(255, 255, 255);
+    background-color: rgba(27, 36, 74, 0.8);
+    width: 600px;
 }
-
 

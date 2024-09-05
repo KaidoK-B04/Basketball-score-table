@@ -82,3 +82,11 @@ function updateColors() {
     guestScoreEl.classList.remove("red");
   }
 }
+
+function resetScores() {
+  scores.home = 0;
+  scores.guest = 0;
+  document.getElementById("home_score").textContent = scores.home;
+  document.getElementById("guest_score").textContent = scores.guest;
+  updateColors();
+}

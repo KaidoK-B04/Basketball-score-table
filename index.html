@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
-    <title>Basketball score table</title>
+    <title>Streetball score table</title>
     <link rel="stylesheet" href="styles.css">
     <script src="app.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>BASKETBALL GAME</h1>
+        <h1>STREETBALL GAME</h1>
     </header>
     <main>
         <div id="parent">
@@ -27,7 +27,9 @@
                     <button onclick="updateScore('home', 3)">+3</button>
                 </div>
             </div>
+
             <span>VS</span>
+
             <div id="guest">
                 <h1>GUEST</h1>
                 <div class="score">
@@ -40,10 +42,11 @@
                 </div>
             </div>
         </div>
-        <button onclick="resetScores()">NEW GAME</button>
     </main>
+
     <footer>
-        <h5>Vanilla JavaScript made by KaidoK-B04</h5>
+        <button id="resetbtn" onclick="resetScores()">RESET SCORES</button>
+        <h5>Vanilla JS by: KaidoK-B04</h5>
     </footer>
 </body>
 
